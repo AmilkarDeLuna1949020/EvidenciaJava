@@ -1,0 +1,103 @@
+//Amilkar Jhair De Luna Palacios
+//Pseudocodigo
+Clase Principal
+	Imprimir: 	“Presione 1 alta a Doctor
+			2 Para alta a paciente
+			3 Para hacer cita
+			4 Control del sistema”
+
+	Leer en Opcion
+
+	Si Opcion =1
+		Llamar clase Doctor
+	
+	Si Opcion=2
+		Llamar clase Paciente
+
+	Si Opcion=3
+		Llamar clase Cita
+
+	sI Opcion=4
+		Llamar clase Control
+
+Fin de la clase
+
+Clase Doctor
+
+	Arreglo identificadoresD[10]
+	
+	Imprimir: “Favor de escribir su número de identificación”
+	Leer en identificador
+	
+	Si identificador==identificadoresD[0-9]
+		Imprimir:“Favor de escribir su Nombre Completo”
+		Leer en Nombre
+		Imprimir: “Favor de escribir área de especialidad”
+		Leer en Especialidad
+		Imprimir: “Doctor”+Nombre+” se ha dado de alta de ”+Especialidad
+	Si no 
+		Imprimir: “El número de identificación es incorrecto”
+Fin de la clase
+
+Clase Paciente
+
+	Arreglo IdentificadorD[10]
+	
+	Imprimir: “Favor de escribir su número de identificación”
+	Leer en identificador
+	
+	Si identificador==IdentificadorD[0-9]
+		Imprimir:“Favor de escribir el Nombre Completo del paciente”
+		Leer en Nombre
+		
+		Imprimir: “Paciente ” + Nombre1 + ” se ha dado de alta”
+	Si no 
+		Imprimir:"El número de identificación es incorrecto”
+Fin de la clase
+
+Clase Cita
+
+	Arreglo IdentificadorD[10]
+	
+	Imprimir: “Favor de escribir su número de identificación”
+	Leer en identificador
+	
+	Si identificador==IdentificadorD[0-9]
+		Imprimir:“Favor de escribir La hora, recuerde que solo puede ser del 1-12”
+		Leer en Hora
+		
+		Si Hora<=12 && Hora >=1
+			
+			Imprimir:“Favor de escribir 1 para escoger tiempo de tarde o escribe 2 para tiempo de mañana”
+			Leer en tiempo
+			
+			Imprimir:“Escribe el motivo de la cita”
+			Leer en motivo
+
+
+			Imprimir: "Hora de cita: ”+Hora+” “+tiempo+"-motivo: "+motivo
+
+	Si no 
+		Imprimir:"El número de identificación es incorrecto”
+Fin de la clase
+
+Clase Control
+
+	Arreglo IdentificadorD[10]
+	
+	Imprimir: “Favor de escribir su número de identificación”
+	Leer en identificador
+	
+	Si identificador==IdentificadorD[0-9]
+		Imprimir: “Favor de escribir la contraseña”
+		Leer en contraseña
+		
+		Si contraseña==457839
+			Imprimir:“Acceso de control confirmado”
+		Si no 
+			Imprimir: “La información que escribió es incorrecta”
+	Si no 
+		Imprimir:"El número de identificación es incorrecto”
+Fin de la clase
+
+
